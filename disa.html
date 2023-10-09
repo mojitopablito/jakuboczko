@@ -4,38 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jestem krolem</title>
+    <title>Kosiam lewego</title>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
+
         header {
-            background-color: #800000;
+            background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
+
         nav {
             background-color: #444;
             text-align: center;
             padding: 10px;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 10px;
         }
+
         section {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
+
         footer {
-            background-color: #444;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px;
         }
+
         table {
             width: 80%;
             margin: 0 auto;
@@ -43,155 +49,137 @@
             border-radius: 10px;
             overflow: hidden;
         }
+
         th, td {
             padding: 10px;
             text-align: center;
         }
+
         th {
-            background-color: #C0C0C0;
+            background-color: #3498db;
             color: white;
         }
+
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
         tr:nth-child(odd) {
             background-color: #e5e5e5;
         }
+
         td:first-child {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
+
         td:last-child {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
         }
-        .header2 {
-            text-align: center;
-            font-size: 40px;
+
+        #video-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
-        .header3 {
+
+        .video {
+            margin: 10px;
+            flex-basis: calc(50% - 20px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        #image-container {
             text-align: center;
+            margin-top: 20px;
+        }
+
+        #image-container img {
+            width: 560px;
+            height: 315px;
+        }
+
+        /* Styl dla kontenera z audio */
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        /* Styl dla audio */
+        .center-container audio {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="znaj.jpg" alt="znaj.jpg" width="600" height="auto">
-        <h1>Pablito Mojito</h1>
+        <img src="logo.png" alt="X D" width="200" height="auto">
+        <h1>007 #gra sz?</h1>
     </header>
     <section>
-        <div class="header3">
-        <h2 class="header2">Strona o prawo jazdy</h2>
-        <p>FAjne znaki</p>
-        <h2>Lista znakow do zdania prawka</h2>
-        </div>
+        <h2>Strona muzyczna</h2>
+        <p>OOOO PLASTIKOWA BIEDRONKO TY MOJA KOCHANA</p>
+        
+        <h2>Ona lubi snieg a ja srednio</h2>
         <table border="1">
             <thead>
                 <tr>
-                    <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
-<table>
-    <thead>
-        <tr>
-            <th>Rodzaj znaku</th>
-            <th>OPIS ZNAK</th>
-            <th>HAHA</th>
-            <th>Ocena 0/10</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Znaki ostrzegawcze</td>
-            <td>Znak ktury ostrzega</td>
-            <td>XDD</td>
-            <td>100/10</td>
-        </tr>
-        <tr>
-            <td>znaki nakazu</td>
-            <td>ZNak ktury nakazuje</td>
-            <td>nie smieszne, gdy ktos kaze ci cos robic czego nie chcesz</td>
-            <td>2/10</td>
-        </tr>
-	    <td>ZNAKI INFORMACYJNE</td>
-            <td>ZNak ktury informuje, ale nie jest to potrzebne </td>
-            <td>znak bez sensu, i tak informacje mam w glowie</td>
-            <td>3/10</td>
-        </tr>
-	<td>znaki uzupełniające</td>
-            <td>ZNak ktury uzupelnia</td>
-            <td>znak dosyc bezwartosciowy</td>
-            <td>2/10</td>
-        </tr>
-        <tr>
-            <td rowspan="2">ZNAKI POZIOME</td>
-            <td>Do tych znakow ciezko sie przycepic</td>
-            <td>smieszne</td>
-            <td>6/10</td>
-        </tr>
-        <tr>
-            <td>Znaki dodatkowe</td>
-            <td>glupie sa</td>
-            <td>0/10</td>
-        </tr>
-    </tbody>
-</table>
-</head>
-</html>
+                    <th>Gatunek</th>
+                    <th>Tytuł filmu</th>
+                    <th>Rok produkcji</th>
+                    <th>Ocena (w skali od 1 do 10)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Dramat, Komedia</td>
+                    <td>Forrest Gump</td>
+                    <td>1994</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    
+    <section id="video-container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://youtu.be/yekPaShqYtc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://youtu.be/V997VX3NIBo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <!-- Kontener z audio wyśrodkowany na środku strony -->
+    <div class="center-container">
+        <h2>Ulubiona piosenka</h2>
+        <audio controls autoplay>
+            <source src="MGNG - COCO errape.mp3" type="audio/mp3">
+            Twoja przeglądarka nie obsługuje odtwarzacza audio.
+        </audio>
+    </div>
+
+    <div id="image-container">
+        <img src="facebook.png" alt="Obrazek" width="560" height="315">
+    </div>
+  
     <footer>
-        <p>© prawko fajne jest nawet </p>
+        <p>© 2023 Anatolii Karpevych</p>
         <p>Data: <span id="currentDate"></span></p>
-    </footer>
+    </footer> 
     <script>
-
-function aktualizujDate() {
-			const currentDateElement = document.getElementById("currentDate");
-			const aktualnaData = new Date();
-			currentDateElement.textContent = aktualnaData.toLocaleDateString() + " " + aktualnaData.toLocaleTimeString();
-		}
-
-		// Wywołanie funkcji aktualizującej datę na początku
-		aktualizujDate();
-
-		// Ustawienie interwału, aby odświeżać datę co sekundę
-		setInterval(aktualizujDate, 1000);
-	
-</script>
+        const currentDateElement = document.getElementById("currentDate");
+        const currentDate = new Date();
+        currentDateElement.textContent = currentDate.toLocaleDateString();
+    </script>
 </body>
 </html>
