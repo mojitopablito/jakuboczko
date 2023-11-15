@@ -1,183 +1,249 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kosiam lewego</title>
+    <title>Świąteczna Strona</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
+        /* style the header */
         header {
-            background-color: #ef42f5;
-            color: #fff;
-            padding: 10px;
             text-align: center;
-        }
-
-        nav {
-            background-color: #ef42f5;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #ef42f5;
-            text-decoration: none;
-            margin: 10px;
-        }
-
-        section {
+            background-color: red;
             padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        footer {
-            background-color: #ef42f5;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #fa9dcf;
             color: white;
+            font-size: 24px;
+            font-weight: bold;
         }
-
-        tr:nth-child(even) {
-            background-color: #fa9dcf;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #fa9dcf;
-        }
-
-        td:first-child {
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-
-        td:last-child {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-
-        #video-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .video {
-            margin: 10px;
-            flex-basis: calc(50% - 20px);
-        }
-
-        iframe {
-            width: 100%;
-            height: 315px;
-        }
-
-        #image-container {
+        
+        /* style the navigation menu */
+        nav {
             text-align: center;
-            margin-top: 20px;
+            background-color: green;
         }
-
-        #image-container img {
-            width: 560px;
-            height: 315px;
-        }
-
-        /* Styl dla kontenera z audio */
-        .center-container {
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 80px;
         }
-
-        /* Styl dla audio */
-        .center-container audio {
-            margin-top: 80px;
+        
+        nav ul li {
+            margin: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* style the kolędy section */
+        #kolędy {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* style the photos section */
+        #photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .photo {
+            text-align: center;
+        }
+        
+        /* style the games section */
+        #games {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* style the recipes section */
+        #recipes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .recipe {
+            text-align: center;
+        }
+        
+        /* style the contact section */
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* style the social media section */
+        #social-media {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* style the animations */
+        .animated {
+            animation-duration: 3s;
+            animation-fill-mode: both;
+        }
+        
+        .infinite {
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="guwno.png" alt="X D" width="500" height="auto">
-        <h1>007 #gra sz?</h1>
+        Powitanie użytkownika w tematycznej oprawie świątecznej
     </header>
-    <section>
-        <h2>Strona muzyczna</h2>
-        <p>OOOO PLASTIKOWA BIEDRONKO TY MOJA KOCHANA</p>
-        
-        <h2>Ona lubi snieg a ja srednio</h2>
     
+    <nav>
+        <ul>
+            <li><a href="#kolędy">Kolędy</a></li>
+            <li><a href="#photos">Galeria zdjęć</a></li>
+            <li><a href="#games">Gry świąteczne</a></li>
+            <li><a href="#recipes">Przepisy</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
     
-    <section id="video-container">
-        <div class="video">
-           <iframe width="1280" height="720" src="https://www.youtube.com/embed/yekPaShqYtc" title="UDAJE WYBORCE PiS WŚRÓD MŁODZIEŻY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section id="kolędy">
+        <h2>Przywitanie od Świętego Mikołaja</h2>
+        <img src="santa_claus.png" alt="Święty Mikołaj">
+    </section>
+    
+    <section id="kolędy">
+        <h2>Kolędy</h2>
+        <ul>
+            <li>
+                <h3>Kolęda 1</h3>
+                <p>Tekst kolędy 1</p>
+                <audio controls>
+                    <source src="kolęda1.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <h3>Kolęda 2</h3>
+                <p>Tekst kolędy 2</p>
+                <audio controls>
+                    <source src="kolęda2.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+            <li>
+                <h3>Kolęda 3</h3>
+                <p>Tekst kolędy 3</p>
+                <audio controls>
+                    <source src="kolęda3.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="photos">
+        <h2>Galeria zdjęć</h2>
+        <div class="photo">
+            <img src="christmas_tree.jpg" alt="Choinka">
+            <p>Opis choinki</p>
         </div>
-        <div class="video">
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/JZBKm2BVUL4" title="Alicja Węgorzewska Hymn Inki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="photo">
+            <img src="ornaments.jpg" alt="Ozdoby">
+            <p>Opis ozdób</p>
         </div>
-        <div class="video">
-           <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="430" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        <div class="photo">
+            <img src="presents.jpg" alt="Prezenty">
+            <p>Opis prezentów</p>
         </div>
     </section>
-    <hr>
-
-    <div class="photo">
-        <img src="tort.jpg" alt="torcik" width="600" height="600" usemap="#swieczki">
-    </div>
-
-    <map id="swieczki">
-        <area shape="rect" coords="259,62,336,105" href="https://d-art.ppstatic.pl/kadry/k/r/1/1c/a5/63cfb77928d02_o_large.jpg" target="_blank" alt="Pisowska Świeczka 1">
-        <area shape="circle" coords="220,128,30" href="https://d-art.ppstatic.pl/kadry/k/r/1/3d/f2/63cfb76ede58f_o_large.jpg" target="_blank" alt="Pisowska Świeczka 2">
-        <area shape="poly" coords="286,194,320,194,328,169,303,153,278,168" href="https://d-art.ppstatic.pl/kadry/k/r/1/17/8f/63cfb77fc0381_o_large.jpg" target="_blank" alt="Pisowska Świeczka 3">
-        <area shape="circle" coords="367,120,30" href="https://d-art.ppstatic.pl/kadry/k/r/1/8a/b9/63cfb783ab34b_o_large.jpg" target="_blank" alt="Pisowska Świeczka 4">
-    </map>
-    <hr>
     
-    <!-- Kontener z audio wyśrodkowany na środku strony -->
-    <div class="center-container">
-        <h2>nutka ziomka ocen pls</h2>
-        <audio controls autoplay>
-            <source src="MGNG - COCO errape.mp3" type="audio/mp3">
-            Twoja przeglądarka nie obsługuje odtwarzacza audio.
-        </audio>
-    </div>
+    <section id="games">
+        <h2>Gry świąteczne</h2>
+        <div class="game">
+            <h3>Łamigłówka 1</h3>
+            <p>Opis łamigłówki 1</p>
+        </div>
+        <div class="game">
+            <h3>Krzyżówka 1</h3>
+            <p>Opis krzyżówki 1</p>
+        </div>
+    </section>
+    
+    <section id="recipes">
+        <h2>Przepisy</h2>
+        <div class="recipe">
+            <h3>Smakołyk 1</h3>
+            <ul>
+                <li>Składnik 1</li>
+                <li>Składnik 2</li>
+                <li>Składnik 3</li>
+            </ul>
+            <ol>
+                <li>Krok 1</li>
+                <li>Krok 2</li>
+                <li>Krok 3</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h3>Smakołyk 2</h3>
+            <ul>
+                <li>Składnik 1</li>
+                <li>Składnik 2</li>
+                <li>Składnik 3</li>
+            </ul>
+            <ol>
+                <li>Krok 1</li>
+                <li>Krok 2</li>
+                <li>Krok 3</li>
+            </ol>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Dane kontaktowe</h2>
+        <p>Imię i nazwisko</p>
+        <p>Numer telefonu</p>
+        <p>Adres email</p>
+    </section>
+    
+    <section id="social-media">
+        <h2>Social Media</h2>
+        <a href="facebook.com">Facebook</a>
+        <a href="twitter.com">Twitter</a>
+        <a href="instagram.com">Instagram</a>
+    </section>
 
-    <div id="image-container">
-        <img src="stju.png" alt="idol z malenkosci" width="560" height="315">
-    </div>
-  
-    <footer>
-        <p>o mamamia</p>
-        <p>Data: <span id="currentDate"></span></p>
-    </footer> 
     <script>
-        const currentDateElement = document.getElementById("currentDate");
-        const currentDate = new Date();
-        currentDateElement.textContent = currentDate.toLocaleDateString();
+        // Add animations to certain elements
+        var santaImage = document.querySelector("img");
+        santaImage.classList.add("animated", "infinite", "rotate");
+
+        var kolędySection = document.querySelector("#kolędy");
+        kolędySection.classList.add("animated", "infinite", "scale");
     </script>
 </body>
 </html>
